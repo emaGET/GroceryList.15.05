@@ -24,7 +24,15 @@ while (true)
 
     string input = Console.ReadLine();
 
-    if (input.ToLower() == "q")
+    if (input == "1")
+    {
+        Console.WriteLine("What would you like to add?");
+        input = Console.ReadLine();
+        groceries.Add(input);
+        // break;
+    }
+    
+    else if (input.ToLower() == "q")
     {
         break;
     }
