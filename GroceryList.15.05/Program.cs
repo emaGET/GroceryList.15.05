@@ -60,7 +60,8 @@ while (true)
         }
         else
         {
-            Console.WriteLine("Item not found... Better if you add it");
+            Console.WriteLine($"{input} was not found, so it has been added!");
+            groceries.Add(input);
         }
 
     }
